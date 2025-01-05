@@ -1,0 +1,110 @@
+<!-- Vue Tutorial 
+
+Learn Vue 
+
+  ** Vue is a popular JavaScript framework.
+  ** User interface built in Vue updates automatically when data changes.
+  ** Vue is easy to learn.
+
+---
+
+This Tutorial
+
+  ** This tutorial is specially designed to help you learn Vue as quickly and 
+  efficiently as possible.
+
+  ** First, you will learn the basics of Vue: text interpolation, directives, and 
+  how to incorporate events and forms into your project.
+
+  ** Then you will learn everything else you need to know about Vue:
+
+  ** Computed properties, watchers, methods, setup for Single-File Components 
+  (SFCs, *.vue files), and more.
+
+---
+
+Try it Yourself Examples in Every Chapter
+
+  ** In every chapter, you can edit the examples online, and click on a button to 
+  view the result.
+
+---
+
+Example -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My first Vue page</title>
+  <style>
+    #app {
+      display: inline-block;
+      padding: 10px;
+      font-size: x-large;
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <h1>Vue Example</h1>
+
+  <p>The message is taken from 'data' inside the Vue instance by writing {{ message }} inside the div with id="app".</p>
+  
+  <div id="app">
+    {{ message }}
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <script>
+    const app = Vue.createApp({
+      data() {
+        return {
+          message: "Hello World!"
+        }
+      }
+    })
+
+    app.mount('#app')
+  </script>
+</body>
+</html>
+
+---
+
+What You Should Already Know 
+
+  ** Before you study Vue, you should have a basic understanding of:
+
+    >> HTML   >> https://www.w3schools.com/html/default.asp
+    >> CSS    >> https://www.w3schools.com/css/default.asp
+    >> JavaScript   >> https://www.w3schools.com/js/default.asp
+
+---
+
+Vue History 
+
+  ** Evan You, a Google employee using AngualarJS, started to develop Vue in 2013.
+  ** Vue version 1.0 was released in 2015.
+
+---
+
+Vue Exercises 
+
+Test Yourself With Exercises
+
+---
+
+Vue Quiz ?
+
+  Learn by taking a quiz! The quiz will give you a single of how much you know about Vue.
+
+---
+
+Learn by Examples 
+
+  ** Learn by examples! This tutorial supplements all explanations with 
+  clarifying example. 
+    >> https://www.w3schools.com/vue/vue_examples.php
+
