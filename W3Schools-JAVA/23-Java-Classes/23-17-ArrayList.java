@@ -107,9 +107,36 @@ Change an Item
 
 Example
 
-  cars.remove(0)
+  cars.set(0, "Opel");
+
+  -->
+  import java.util.ArrayList;
+
+  public class Main {
+    public static void main(String[] args) {
+      ArrayList<String> cars = new ArrayList<String>();
+      cars.add("Volvo");
+      cars.add("BMW");
+      cars.add("Ford");
+      cars.add("Mazda");
+      cars.set(0, "Opel");
+
+      System.out.println(cars);
+    }
+  }
+
+  >>> [Opel, BMW, Ford, Mazda]
 
 ---
+
+Remove an Item 
+  ** To remove an element, use the remove() method and refer to the index number:
+
+Example
+
+  cars.remove(0)
+  -->
+
   import java.util.ArrayList;
 
   public class Main {
@@ -124,5 +151,7 @@ Example
       System.out.println(cars);
     }
   }
+
+
 
 
