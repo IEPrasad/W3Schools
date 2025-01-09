@@ -152,6 +152,86 @@ Example
     }
   }
 
+** To remove all the elements in the ArrayList, use the clear() method:
 
+Example
 
+  cars.clear();
+  -->
+  import java.util.ArrayList;
 
+  public class Main {
+    public static void main(String[] args) {
+      ArrayList<String> cars = new ArrayList<String>();
+      cars.add("Volvo");
+      cars.add("BMW");
+      cars.add("Ford");
+      cars.add("Mazda");
+      cars.clear();
+
+      System.out.println(cars);
+    }
+  }
+
+  >>>
+    []
+
+---
+
+ArrayList Size 
+
+  ** To find out how many elements on ArrayList have, use the size method:
+
+Example 
+  
+  cars.size();
+  -->
+
+  import java.util.ArrayList;
+
+  public class Main {
+    public static void main(String[] args) {
+      ArrayList<String> cars = new ArrayList<String>();
+      cars.add("Volvo");
+      cars.add("BMW");
+      cars.add("Ford");
+      cars.add("Mazda");
+      
+      System.out.println(cars.size());
+    }
+  }
+
+  >>> 
+    4
+
+---
+
+Loop Through an ArrayList 
+
+  ** Loop through the elements of an ArrayList with a for loop, and use the size()
+  method to specify how many times the loop should run:
+
+Example
+
+  import java.util.ArrayList;
+
+  public class Main {
+    public static void main(String[] args) {
+      ArrayList<String> cars = new ArrayList<String>();
+      cars.add("Volvo");
+      cars.add("BMW");
+      cars.add("Ford");
+      cars.add("Mazda");
+
+      for (int i = 0; i < cars.size(); i++) {
+        System.out.println(cars.get(i));
+      }
+    }
+  }
+
+  >>>
+    Volvo
+    BMW
+    Ford
+    Mazda
+    
