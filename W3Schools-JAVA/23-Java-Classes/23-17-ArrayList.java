@@ -234,4 +234,36 @@ Example
     BMW
     Ford
     Mazda
-    
+
+    ---
+
+** You can also loop through an ArrayList with the for-each loop:
+
+Example
+
+  import java.util.ArrayList;
+
+  public class Main {
+    public static void main(String[] args) {
+      ArrayList<String> cars = new ArrayList<String>();
+      cars.add("Volvo");
+      cars.add("BMW");
+      cars.add("Ford");
+      cars.add("Mazda");
+      
+      for (String i : cars) {
+        System.out.println(i);
+      }
+    }
+  }
+
+  >>>    
+    Volvo
+    BMW
+    Ford
+    Mazda
+
+---
+
+Other Types 
+  
