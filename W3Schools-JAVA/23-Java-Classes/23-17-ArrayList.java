@@ -267,3 +267,111 @@ Example
 
 Other Types 
   
+  ** Elements in an ArrayList are actually objects. In the example above, we 
+  created elements (objects) of type "String". Remember that a String in Java is 
+  an object (not a primitive type). To use other types, such as int, you must 
+  specify an equivalent wrapper class: Integer. For other primitive types, use:
+  Boolean for boolean, Character for char, Double for double, etc:
+
+Example
+
+  ** Create an ArrayList to store numbers (add elements of types Integer):
+
+  import java.util.ArrayList;
+
+  public class Main {
+    public static void main(String[] args) {
+      ArrayList<Integer> myNumbers = new ArrayList<Integer>();
+      myNumbers.add(10);
+      myNumbers.add(15);
+      myNumbers.add(20);
+      myNumbers.add(25);
+
+      for (int i : myNumbers) {
+        System.out.println(i);
+      }
+    }
+  }
+
+  >>>
+    10
+    15
+    20
+    25
+
+---
+
+Sort an ArrayList
+
+  ** Another useful class in the java.util package is the Collections class, which
+  include the sort() method for sorting lists alphabetically or numerically:
+
+Example
+
+  ** Sort an ArrayList of Strings:
+
+  import java.util.ArrayList;
+  import java.util.Collections;   // Import the Collections class
+
+  public class Main {
+    public static void main(String[] args) {
+      ArrayList<String> cars = new ArrayList<String>();
+      cars.add("Volvo");
+      cars.add("BMW");
+      cars.add("Ford");
+      cars.add("Mazda");
+
+      Collections.sort(cars);   // Sort cars
+      for (String i : cars) {
+        System.out.println(i);
+      }
+    }
+  }
+
+  >>>
+    BMW
+    Ford
+    Mazda
+    Volvo
+
+---
+
+Example
+
+  ** Sort an ArrayList of Integers:
+
+  import java.util.ArrayList;
+  import java.util.Collections;
+
+  public class Main {
+    public static void main(String[] args) {
+      ArrayList<Integer> myNumbers = new ArrayList<Integer>();
+      myNumbers.add(33);
+      myNumbers.add(15);
+      myNumbers.add(20);
+      myNumbers.add(34);
+      myNumbers.add(8);
+      myNumbers.add(12);
+
+      Collections.sort(myNumbers);    // Sort myNumbers
+
+      for (int i : myNumbers) {
+        System.out.println(i);
+      }
+    }
+  }
+
+  >>>
+    8
+    12
+    15
+    20
+    33
+    34
+
+---
+
+Complete ArrayList Reference
+
+  ** For a complete reference of ArrayList methods, go to our Java ArrayList Reference.
+      >> https://www.w3schools.com/java/java_ref_arraylist.asp
