@@ -26,4 +26,38 @@ Example
 
   ArrayList<Integer> myNumbers = new ArrayList<Integer>();  // Valid
 
-  
+---
+
+Creating Wrapper Objects
+
+  ** To Create a wrapper object, use the wrapper class instead of the primitive type: To get the value, you can just print the object:
+
+Example
+
+  public class Main {
+    public static void main(String[] args) {
+      Integer myInt = 5;
+      Double myDouble = 5.99;
+      Character myChar = 'A';
+      System.out.println(myInt);
+      System.out.println(myDouble);
+      System.out.println(myChar);
+    }
+  }
+
+** Another useful method is the toString() method, which is used to convert wrapper objects to strings.
+
+** In the following example, we convert an Integer to a String, and 
+use the length() method of the String class to output the length of the "string":
+
+Example
+
+  public class Main {
+    public static void main(String[] args) {
+      Integer myInt = 100;
+      String myString = myInt.toString();
+      System.out.println(myString.length());
+    }
+  }
+
+                          ----
