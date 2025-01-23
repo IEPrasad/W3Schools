@@ -46,3 +46,42 @@ Example
 
 Example Explained 
 
+  ** In this example, The word "w3schools" is being searched for in a sentence. 
+
+  ** First, the pattern is created using the Pattern.compile() 
+  method. The first parameter indicates which pattern is being 
+  searched for and the second parameter has a flag to indicates 
+  that the search should be case-insensitive. The second parameter 
+  is optional. 
+
+  ** The matcher() method is used to search for the pattern in a 
+  string. It returns a Matcher object which contains information 
+  about the search that was performed.
+
+  ** The find() method returns true if the pattern was found in the 
+  string and false if it was not found. 
+
+---
+
+Flags 
+
+  ** Flags in the compile() method change how the search is performed. Here are few of them:
+
+    - Pattern.CASE_INSENSITIVE - The case of letters will be ignored
+    when performing a search.
+
+    - Pattern.LITERAL - Special characters in the pattern will not 
+    have any special meaning and will be treated as ordinary characters when performing a search. 
+
+    - Pattern.UNICODE_CASE - Use it together with the 
+    CASE_INSENSITIVE flag to also ignore the case of letters outside of the English alphabet 
+
+---
+
+Regular Expression Patterns 
+
+  ** The first parameter of the Pattern.compile() method is the pattern. It describe what is being searched for. 
+
+  ** Brackets are used to find a range of characters: 
+
+  
