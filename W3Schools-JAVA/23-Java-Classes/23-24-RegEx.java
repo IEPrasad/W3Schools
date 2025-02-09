@@ -41,7 +41,7 @@ Example
       }
     }
   }
-  // Outputs Match found
+  // >>> Outputs Match found
 
 
 Example Explained 
@@ -83,5 +83,23 @@ Regular Expression Patterns
   ** The first parameter of the Pattern.compile() method is the pattern. It describe what is being searched for. 
 
   ** Brackets are used to find a range of characters: 
+
+  Expression      Description 
+  
+  [abc]           Find one character from the options 
+                  between the brackets 
+
+  [^abc]          Find one character NOT between the 
+                  brackets 
+
+  [0-9]           Find one character from the range 0 to 9 
+
+  ---
+
+Metacharacters
+
+  ** Metacharacters are characters with a special meaning: 
+
+  Metacharacter       Description
 
   
