@@ -124,3 +124,24 @@ Metacharacters
   \uxxxx              Find the Unicode character 
                       specified by the hexadecimal number xxxx
 
+Quantifiers define quantities: 
+
+
+Quantifier	Description
+  n+	        Matches any string that contains at 
+              least one n
+ 
+  n*	        Matches any string that contains zero 
+              or more occurrences of n
+ 
+  n?	        Matches any string that contains zero 
+              or one occurrences of n
+ 
+  n{x}	      Matches any string that contains a 
+              sequence of X n's
+ 
+  n{x,y}	    Matches any string that contains a 
+              sequence of X to Y n's
+ 
+  n{x,}	      Matches any string that contains a 
+              sequence of at least X n's
