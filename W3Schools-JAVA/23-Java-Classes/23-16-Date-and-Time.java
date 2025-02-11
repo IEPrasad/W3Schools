@@ -128,7 +128,6 @@ The ofPattern() method accepts all sorts of values, if you want to display the d
   dd-MMM-yyyy                       "29-SEP-1988"
   E, MMM dd yyyy                    "Thu, Sep 29 1988"
 
-
 ---
 
 Example 
