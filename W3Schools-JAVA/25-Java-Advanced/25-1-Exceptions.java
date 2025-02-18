@@ -126,3 +126,23 @@ The throw keyword
   Exception in thread "main" java.lang.ArithmeticException: Access denied - You must be at least 18 years old.
           at Main.checkAge(Main.java:4)
           at Main.main(Main.java:12)
+
+
+** If age was 20, you would not get an exception:
+
+Example
+
+  checkAge(20);
+
+  The output will be:
+
+    Access granted - You are old enough!
+
+---
+
+Error and Exception Types Reference 
+
+  ** For a list of different errors and exception types, go to our Java Errors and Exception Types References 
+    >> https://www.w3schools.com/java/java_ref_errors.asp
+
+                          ----
