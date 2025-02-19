@@ -16,4 +16,22 @@ Example
   
   File myObj = new File("Filename.txt");    // Specify the filename 
 
+--- 
+
+** If you don't know what a package is, read our Java Package Tutorial. 
+    >> https://www.w3schools.com/java/java_packages.asp
+
+---
+
+The File class has many useful methods for creating and getting information about files. For example:
+
+
+  Method              Type            Description 
+
+  canRead()           Boolean         Tests whether the file is readable or not 
+  canWrite()          Boolean         Tests whether the file is writable or not
+  createNewFile()     Boolean         Creates an empty file 
+  delete()            Boolean         Deletes a file 
+
   
+
