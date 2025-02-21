@@ -32,6 +32,18 @@ The File class has many useful methods for creating and getting information abou
   canWrite()          Boolean         Tests whether the file is writable or not
   createNewFile()     Boolean         Creates an empty file 
   delete()            Boolean         Deletes a file 
+  exits()             Boolean         Tests whether the file exists
+  getName()           String          Returns the name of the file 
+  getAbsolutePath()   String          Returns the absolute pathname of the file 
+  length()            Long            Returns the size of the file in bytes 
+  list()              String[]        Returns an array of the files in the directory  
+  mkdir()             Boolean         Create a directory 
 
-  
+  You will learn how to create, write, read and delete files in the next chapter:
 
+  Create/Write Files >> https://www.w3schools.com/java/java_files_create.asp
+  Read Files >> https://www.w3schools.com/java/java_files_read.asp
+  Delete Files >> https://www.w3schools.com/java/java_files_delete.asp
+
+
+                      ----
