@@ -36,6 +36,8 @@ Exercise
 
   ** What is a correct command to create a React applications
 
-    > npx crete-react-app my-team 
+    > npx create-react-app my-team 
     > npx start-react-app my-team
     > npx init-react-app my-team 
+
+    
