@@ -1,33 +1,26 @@
-Learn Java 
+Java How To Find the Smallest Element in an Array 
 
-  ** Java is a popular programming language. 
-  
-  ** Java is used to develop mobile apps, web apps, desktop apps, games and much more.
+  ** Create a program that finds the lowest age among different ages:
 
-Example in Each Chapter 
+Example:
 
-  ** Our "Try it Yourself" editor makes it easy to learn Java. You can edit Java code and view the result in your browser.
+  // An array storing different ages
+  int ages[] = {20, 22, 18, 35, 48, 26, 87, 70};
 
-Example
+  // Create a 'lowest age' variable and assign the first array element of ages to it 
+  int lowestAge = ages[0];
 
-  public class Main {
-    public static void main(String[] args) {
-      System.out.println("Hello World");
+  // Loop through the elements of the array
+  for (int age : ages) {
+    // Check if the current age is less than the current 'lowest age'
+    if (lowestAge > age) {
+      // If the smaller age is found, update 'lowest age' with that element 
+      lowestAge = age;
     }
-  }
+  } 
 
----
+  // Output the value of the lowest age 
+  System.out.println("The lowest age is: " + lowestAge);
 
-** Click on the "Run example" button to see how it works. 
 
-** We recommend reading this tutorial, in the sequence listed in the left menu.
-
-** Java is an object oriented language and some may be new. Take breaks when needed, and go over the examples as many times as needed. 
-
----
-
-Java Exercises
-  
-  ** Many chapters in this tutorial end with an exercise where you can check your level of knowledge. 
-
-              ----
+          ----
