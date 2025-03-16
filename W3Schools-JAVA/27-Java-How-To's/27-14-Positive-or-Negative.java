@@ -10,4 +10,17 @@ Example
 
   if (myNum > 0) {
     System.out.println("The value is a positive number.");
-  } else if (myNum < 0)
+  } else if (myNum < 0) {
+    System.out.println("The value is a negative number.")
+  } else {
+    System.out.println("The value is 0.");
+  }
+
+---
+
+Related Pages 
+
+  ** Java If..Else Tutorial 
+      >> https://www.w3schools.com/java/java_conditions.asp
+
+          ----
