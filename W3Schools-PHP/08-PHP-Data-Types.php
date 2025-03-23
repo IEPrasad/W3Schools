@@ -74,3 +74,36 @@ A float (floating point number) is a number with a decimal point or a number in 
 
 In the following example $x is a float. The PHP var_dump() function returns the data type and value:
 
+Example
+    $x = 10.365;
+    var_dump($x);
+
+---
+
+PHP Boolean 
+
+    ** A Boolean represents two possible states: TRUE or FALSE.
+
+Example
+
+    $x = true;
+    var_dump($x);
+
+  ** Booleans are often used in conditional testing.
+  ** You will learn more about conditional testing in the PHP If...Else Chapter. 
+
+    >> https://www.w3schools.com/php/php_if_else.asp
+
+---
+
+PHP Array 
+
+    ** An array stores multiple values in one single variable.
+
+    ** In the following example $cars is an array. The PHP var_dump() function returns the data types and values:
+
+Example
+
+    $cars = array("Volvo", "BMW", "Toyota");
+    var_dump($cars);
+    
