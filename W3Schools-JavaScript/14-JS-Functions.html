@@ -100,8 +100,31 @@ Example
     let value = toCelsius(77);
   </script>
 
+** Accessing a function with incorrect parameters can return an incorrect answer:
 
+Example
 
+  <script>
+    function toCelsius(fahrenheit) {
+      return (5/9) * (fahrenheit-32);
+    }
+
+    let value = toCelsius();
+  </script>
+
+** Accessing a function without () returns the function and not the function result: 
+
+Example
+  <script>
+    function toCelsius(fahrenheit) {
+      return (5/9) * (fahrenheit-32);
+    }    
+
+    let value = toCelsius;
+  </script>
+
+**Note 
+    ** As you see from the example above, toCelsius refers to the function object, and toCelsius() refers to the function result.
 
 <!DOCTYPE html>
 <html>
