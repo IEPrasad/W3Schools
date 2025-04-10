@@ -33,3 +33,4 @@
 // ** TypeScript allows developers to add types to JavaScript.
 
 // Start the Exercises
+    // >> https://www.w3schools.com/TypeScript/exercise.php?filename=exercise_intro1
