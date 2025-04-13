@@ -144,3 +144,49 @@ Modify the React Application
 
 ---
 
+Example
+
+  ** Replace all the content inside the <div className="App"> with a <h1> element.
+
+  ** See the changes in the browser when you click Save. 
+
+  function App() {
+    return (
+      <div className="App">
+        <h1>Hello World!</h1>
+      </div>
+    );
+  }
+
+  export default App;
+
+** Notice that we have removed the imports we do not need (logo.svg and App.css).
+
+
+---
+
+What's Next?
+
+  ** Now you have a React Environment on your computer, and you are ready to learn more about React. 
+
+  ** In the rest of this tutorial we will use our "Show React" tool to explain the various aspects of React, and how they are displayed in the browser.
+
+  ** If you want to follow the same steps on your computer, start by stripping down the src folder to
+  only contain one file: index.js. You should also remove any unnecessary lines of code inside the 
+  index.js file to make them look like the example in the "Show React" tool below:
+
+Example 
+
+  ** Click the "Run Example" button to see the result.
+
+  index.js;
+
+  import React from 'react';
+  import ReactDOM from 'react-dom/client';
+
+  const myFirstElement = <h1>Hello React!</h1>
+
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+  root.render(myFirstElement);
+
+        ----
