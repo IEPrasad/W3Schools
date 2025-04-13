@@ -99,3 +99,48 @@ Run the React Application
   A new browser window will pop up with your newly created React App! If not, open your browser and type localhost:3000 in the address bar. 
 
 ---
+
+Modify the React Application 
+
+  ** So far so good, but how do I change the content?
+
+  ** Look in the my-react-app directory, and you will find a src folder. Inside the src folder there 
+  is a file called App.js, open and it will look like this:
+
+  /myReactApp/src/App.js:
+  
+  import logo from './logo.svg';
+  import './App.css';
+
+  function App() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo"/>
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
+          </p>
+          <a 
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+        </header>
+      </div>
+    )
+  }
+
+  export default App;
+
+---
+
+  ** Try changing the HTML content and save the file.
+
+  ** Notice that the changes are visible immediately after you save the file, you do not have
+  to relaod the browser!
+
+---
+
