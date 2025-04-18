@@ -29,3 +29,9 @@ FUll code
   const myArray = ['apple', 'banana', 'orange'];
 
   const myList = myArray.map((item) => <p>{item}</p>)
+
+  const container = document.getElementById('root');
+  const root = ReactDom.createRoot(container);
+  root.render(myList);
+
+        ----  
