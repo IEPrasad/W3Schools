@@ -38,3 +38,99 @@ Example
 
 ** When destructuring arrays, the order that variables are declared is important.
 
+---
+
+** If we only want the car and suv we can simply leave out the truck but keep the comma:
+
+  const vehicles = ['mustang', 'f-150', 'expedition'];
+
+  const [car,, suv] = vehicles;
+
+** Destructuring comes in handy when a function returns an array:
+
+Example 
+
+  function calculate(a, b) {
+    const add = a + b;
+    const subtract = a - b;
+    const multiply = a * b;
+    const divide = a / b;
+
+    return [add, subtract, multiply, divide];
+  }
+
+  const [add, subtract, multiply, divide] = calculate(4, 7);
+
+---
+
+Destructuring Objects 
+  
+  ** Here is the old way of using an object inside a function;
+
+Example 
+<script>
+// Before:
+    const vehicleOne = {
+      brand: 'Ford',
+      model: 'Mustang',
+      Type: 'car',
+      year: 2021,
+      color: 'red'
+    } 
+
+  myVehicle(vehicleOne);
+
+  // Old way1
+  function myVehicle(vehicle) {
+    const message = 'My ' + vehicle.type + ' is a ' + vehicle.color + ' ' + vehicle.brand + ' ' + vehicle.model + '.';
+  }
+
+// ** Here is the new way of using an object inside a function:
+
+// Example
+  // ** With destructuring:
+
+  const vehicleOne = {
+    brand: 'Ford',
+    model: 'Mustang',
+    type: 'car',
+    year: 2021,
+    color: 'red'
+  }
+
+  myVehicle(vehicleOne);
+
+  function myVehicle({type, color, brand, model}) {
+    const message = 'My ' + type + ' is a ' + color + ' ' + brand + ' ' + model + '.';
+  }
+</script>
+ 
+** Notice that the object properties do not have to be declared in a specific order.
+
+** We can even destructure deeply nested objects by referencing the nested object then using a colon and curly braces to again destructure the items needed from the nested object:
+
+Example 
+
+<script>
+  const vehicleOne = {
+    brand: 'Ford',
+    model: 'Mustang',
+    type: 'car',
+    year: 2021,
+    color: 'red',
+    registration: {
+      city: 'Houseton',
+      state: 'Texas',
+      country: 'USA'
+    }
+  }
+
+  myVehicle(vehicleOne) 
+
+  function myVehicle({ model, registration: { state } }) {
+    const message = 'My ' + model + ' is registered in ' + state + '.';
+  }
+</script>
+
+
+        ----
