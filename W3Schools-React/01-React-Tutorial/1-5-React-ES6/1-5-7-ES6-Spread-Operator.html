@@ -15,3 +15,35 @@ Example
   document.write(numbersCombined);
   </script>
 
+** The spread operator is often used in combination with destructuring.
+
+Example 
+
+  ** Assign the first and second items from numbers to variables and put the rest in array:
+
+    const numbers = [1, 2, 3, 4, 5, 6];
+
+    const [one, two, ...rest] = numbers;
+
+----
+
+  ** We can use the spread operator with objects too:
+
+Example
+
+  ** Combine these two objects:
+
+  const myVehicle = {
+    brand: 'Ford',
+    model: 'Mustang',
+    color: 'red'
+  }
+
+  const updateMyVehicle = {
+    type: 'car',
+    year: 2021,
+    color: 'yellow'
+  }
+
+  const myUpdateVehicle = {...myVehicle, ...updateMyVehicle}
+
