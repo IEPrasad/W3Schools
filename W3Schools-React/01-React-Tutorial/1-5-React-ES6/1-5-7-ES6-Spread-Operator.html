@@ -47,3 +47,39 @@ Example
 
   const myUpdateVehicle = {...myVehicle, ...updateMyVehicle}
 
+--- 
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      const myVehicle = {
+        brand: 'Ford',
+        model: 'Mustang',
+        color: 'red'
+      };
+
+      const updateMyVehicle = {
+        type: 'car',
+        year: 2021,
+        color: 'yellow'
+      };
+
+      const myUpdatedVehicle = { ...myVehicle, ...updateMyVehicle };
+
+      // Check the result object in the console:
+      console.log(myUpdatedVehicle);
+    </script>
+
+    <p>Press F12 and see the result object in the console view.</p>
+  </body>
+</html>
+
+
+---
+
+  ** Notice the properties that did not match were combined, but the property that did match, color,
+  was overwritten by the last object that was passed, updatedMyVehicle. The resulting color s now 
+  yellow.
+
+      ----
