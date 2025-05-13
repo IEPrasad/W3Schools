@@ -43,3 +43,46 @@ Example
 
     export { name, age }
   </script>
+
+---
+
+Default Exports 
+
+  ** Let us create another file, named message.js, and use it for demonstrating default export.
+
+  ** You can only have one default export in a file.
+
+Example
+
+  message.js
+  <script>
+    const message = () => {
+      const name = "Jesse";
+      const age = 40;
+      return name + ' is ' + age + 'years old.';
+    }
+
+    export default message;
+  </script>
+
+---
+
+Import 
+
+  ** You can import modules into a file two ways, based on if they are named exports or default exports.
+
+  ** Named exports must be destructuring using curly braces. Default exports do not.
+
+Example
+
+  ** Import named exports from the file person.js:
+
+  import { name, age } from "./person.js";
+
+Example
+
+  ** Import a default export from teh file message.js:
+
+  import message from "./message.js";
+
+        ----
